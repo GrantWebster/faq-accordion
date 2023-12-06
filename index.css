@@ -1,0 +1,15 @@
+/* Reset Border Box */
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
