@@ -1,15 +1,81 @@
 /* Reset Border Box */
-html {
+* {
   box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
-  margin: 0 0;
-  padding: 0 0;
+  margin: 0px 0px;
+  padding: 0px 0px;
+  font-family: 'Work Sans', sans-serif;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+.background {
+  background-image: url("./assets/images/background-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-start;
+  max-width: 87%;
+  margin: 8.875rem auto 0 auto;
+  padding: 2.0625rem 1.625rem;
+  border-radius: 0.5rem;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.heading {
+  margin-bottom: 29px;
+}
+
+.heading > * {
+  display: inline;
+}
+
+h1 {
+  font-size: 33px;
+  font-weight: 700;
+  margin-left: 1.6875rem;
+}
+
+.star-icon {
+  width: 1.375rem;
+}
+
+.faq-question {
+  margin: 29px 0;
+}
+
+.question-details {
+
+}
+
+.question-title {
+  
+}
+
+/* --- Color Section --- */
+
+.Light-pink {
+  color: hsl(275, 100%, 97%);
+}
+
+.grayish-purple {
+  color: hsl(292, 16%, 49%);
+} 
+
+.dark-purple {
+  color: hsl(292, 42%, 14%);
+}
+
+.light-pink-bg {
+  background-color: hsl(275, 100%, 97%);
+}
+
+.grayish-purple-bg {
+  background-color: hsl(292, 16%, 49%);
+} 
+
+.dark-purple-bg {
+  background-color: hsl(292, 42%, 14%);
 }
