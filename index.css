@@ -26,10 +26,6 @@ h1, h2, p {
   background-color: hsl(0, 0%, 100%);
 }
 
-/* .heading {
-  margin-bottom: 29px;
-} */
-
 .heading > * {
   display: inline;
 }
@@ -53,10 +49,6 @@ h1 {
   border: none;
 }
 
-/* .question-details {
-
-} */
-
 .question-title {
   display: flex;
   align-items: center;
@@ -71,7 +63,11 @@ h1 {
 }
 
 .question-title > h2 {
-  width: 13.4375rem;
+  width: 80%;
+}
+
+.question-title > h2:hover {
+  color: #ac29e9;
 }
 
 .faq-answer {
@@ -80,6 +76,41 @@ h1 {
   margin-top: 1.625rem;
   margin-bottom: 1.25rem;
 }
+
+/* --- Desktop Media Query --- */
+@media only screen and (min-width: 770px) {
+  .background {
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+  }
+
+  .content-container {
+    max-width: 37.5rem;
+    margin: 10.4375rem auto 0 auto;
+    padding: 3.4375rem 2.5rem 2.5rem 2.5rem;
+  }
+
+  .question-title > h2 {
+    font-size: 18px;
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .star-icon {
+    width: 2.25rem;
+  }
+
+  .faq-answer {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-top: 1.625rem;
+    margin-bottom: 1.25rem;
+  }
+
+}
+
 
 /* --- Color + Font Style Section --- */
 
