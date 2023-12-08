@@ -1,14 +1,16 @@
-const questionIcon = document.getElementById("question-icon");
-const faqDetail = document.getElementsById("details-id1");
-const faq = document.getElementById("summary-id1");
+function toggleFaqIcon(e) {
+  
+  // Gets img element of details element with same id +'-icon'
+  const faqIcon = document.getElementById(e.target.id+'-icon');
 
-function toggleFaqIcon() {
-
-  if(faqDetail.open) {
-    questionIcon.src = "./assets/images/icon-minus.svg";
-  } else {
-    questionIcon.src = "./assets/images/icon-plus.svg";
-  }
+  if (faqIcon.src.endsWith("icon-plus.svg")) {
+        faqIcon.src = "./assets/images/icon-minus.svg";
+      } else {
+        faqIcon.src = "./assets/images/icon-plus.svg";
+      }
 }
 
-faq.addEventListener("click", toggleFaqIcon);
+const faqs = document.querySelectorAll("details");
+faqs.forEach((question) => {
+  question.addEventListener("toggle", toggleFaqIcon);
+});
